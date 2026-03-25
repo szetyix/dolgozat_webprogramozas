@@ -1,0 +1,144 @@
+/*
+* File: style.css
+* Author: Nagy Szemere
+* Copyright: 2026, Nagy Szemere
+* Group: Szoft I / N
+* Date: 2026-03-25
+* Github: https://github.com/szetyix
+* Licenc: MIT
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #2d2d2d;
+    padding: 20px;
+}
+
+
+.milyencimet h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+
+.caution h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #e93305;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.caution a {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: rgba(143, 216, 25, 1);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+#egesz-form {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-control {
+    background: #fafafa;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    color: #2d2d2d;
+    font-size: 1rem;
+    padding: 0.6rem 0.85rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: rgba(143, 216, 25, 1);
+    box-shadow: 0 0 0 3px rgba(143, 216, 25, 0.15);
+}
+
+
+button[type="submit"] {
+    margin-top: 0.3rem;
+    padding: 0.7rem;
+    background-color: rgba(143, 216, 25, 1);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(85, 129, 13, 0.8);
+}
+
+button[type="submit"]:active {
+    background-color: rgb(85, 129, 13, 0.6);
+}
+
+
+#result {
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
+#bmi-result {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2e7d32;
+    min-height: 1.5rem;
+}
+
+#bmi-result-wrong{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e93305;
+    min-height: 1.5rem;
+}

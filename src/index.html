@@ -1,0 +1,54 @@
+<!-- /*
+* File: index.html
+* Author: Nagy Szemere
+* Copyright: 2026, Nagy Szemere
+* Group: Szoft I / N
+* Date: 2026-03-25
+* Github: https://github.com/szetyix
+* Licenc: MIT
+*/ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testtömegindex Kalkulátor - Nagy Szemere</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../img/favicon.png" type="image/png">
+</head>
+<body>
+  <div class="milyencimet">
+    <h1>Testtömegindex Kalkulátor</h1>
+    <p>Készítette: Nagy Szemere | Csoport: Szoft I / N | GitHub: szetyix</p>
+  </div>
+
+  <form id="egesz-form">
+    <div class="form-group">
+      <label for="kilogram">Kilogram</label>
+      <input type="number" id="kilogram" class="form-control" placeholder="pl. 70" min="1" step="0.1">
+    </div>
+    <div class="form-group">
+      <label for="meter">Meter</label>
+      <input type="number" id="meter" class="form-control" placeholder="pl. 1.75" min="0.5" step="0.01">
+    </div>
+    <button type="submit">Számítás</button>
+
+    <div id="result">
+        <p id="bmi-result"></p>
+    </div>
+  </form>
+
+
+  <div class="caution">
+    <h1>Figyelem! Ez a számítás nem veszi figyelembe az eltérő testmagasságokat, ezért nem ad jó eredményt. Alacsonyabb embereknél soványságot, magasabb embereknél testsúlyfelesleget mutathat.</h1>
+    <a href="https://www.telegraph.co.uk" target="_blank">További információ</a>
+  </div>
+
+
+  <script src="bootstrap.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
